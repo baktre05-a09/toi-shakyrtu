@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Тойға шақыру</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section class="hero">
+
+            <p class="subtitle">
+                ҚҰРМЕТТІ ҚОНАҚТАР!
+            </p>
+
+            <h1>
+                Тойымызға<br>
+                шақырамыз
+            </h1>
+
+            <p class="names">
+                Арман & Аружан
+            </p>
+
+            <p class="date">
+                25 ҚАЗАН 2026
+            </p>
+
+            <p class="text">
+                Сіздерді қуанышымызды бірге бөлісуге
+                арналған ерекше кешімізге шақырамыз.
+            </p>
+            <div class="countdown">
+
+    <div>
+        <span id="days">0</span>
+        <small>КҮН</small>
+    </div>
+
+    <div>
+        <span id="hours">0</span>
+        <small>САҒАТ</small>
+    </div>
+
+    <div>
+        <span id="minutes">0</span>
+        <small>МИНУТ</small>
+    </div>
+
+    <div>
+        <span id="seconds">0</span>
+        <small>СЕКУНД</small>
+    </div>
+
+</div>
+
+        </section>
+
+
+        <section class="information">
+
+            <div class="card">
+                <div class="icon">📅</div>
+                <h2>Күні</h2>
+                <p>25 қазан 2026</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⏰</div>
+                <h2>Уақыты</h2>
+                <p>18:00</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📍</div>
+                <h2>Мекенжай</h2>
+                <p>Алматы қаласы</p>
+            </div>
+
+        </section>
+
+
+        <section class="guest">
+
+            <h2>Қатысуыңызды растаңыз</h2>
+
+            <p>
+                Тойға қатысуыңыз туралы жауап қалдырыңыз.
+            </p>
+
+            <form id="guestForm">
+
+                <input
+                    type="text"
+                    id="guestName"
+                    placeholder="Аты-жөніңіз"
+                    required
+                >
+                <input
+    type="number"
+    id="guestsCount"
+    placeholder="Қанша адам келесіз?"
+    min="1"
+    required
+>
+
+                <select id="attendance" required>
+
+                    <option value="">
+                        Жауапты таңдаңыз
+                    </option>
+
+                    <option value="Келемін">
+                        Келемін
+                    </option>
+
+                    <option value="Келе алмаймын">
+                        Келе алмаймын
+                    </option>
+
+                </select>
+
+                <button type="submit">
+                    Жауап жіберу
+                </button>
+
+            </form>
+
+            <div id="message"></div>
+
+        </section>
+
+
+        <footer>
+            Сіздерді асыға күтеміз ❤️
+        </footer>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

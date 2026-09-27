@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f5eee5;
+    color: #40352c;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: #fffdf9;
+    min-height: 100vh;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 25px 60px;
+    background: #eee1d0;
+}
+
+.subtitle {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: normal;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.names {
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.date {
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.text {
+    max-width: 450px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 45px 20px;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.guest {
+    text-align: center;
+    padding: 60px 25px;
+    background: #f5eee5;
+}
+
+.guest h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.guest > p {
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 450px;
+    margin: auto;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 15px;
+
+    border: 1px solid #cfc2b2;
+    border-radius: 8px;
+
+    font-size: 16px;
+    background: white;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #75604c;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+}
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .names {
+        font-size: 25px;
+    }
+
+    .information {
+        grid-template-columns: 1fr;
+    }
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(50, 40, 30, 0.35),
+            rgba(50, 40, 30, 0.35)
+        ),
+        url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.countdown {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.countdown div {
+    min-width: 75px;
+    padding: 12px 10px;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.12);
+}
+
+.countdown span {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.countdown small {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
