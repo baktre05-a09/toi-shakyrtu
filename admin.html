@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Той қонақтары</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Той қонақтары</h1>
+        <p class="subtitle">Қонақтардың жауаптары</p>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>Барлығы</h3>
+                <p id="total">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Келеді</h3>
+                <p id="coming">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Келмейді</h3>
+                <p id="notComing">0</p>
+            </div>
+
+        </div>
+
+        <button onclick="loadGuests()" class="refresh">
+            🔄 Жаңарту
+        </button>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Аты</th>
+                        <th>Қонақ саны</th>
+                        <th>Жауабы</th>
+                        <th>Уақыты</th>
+                    </tr>
+                </thead>
+
+                <tbody id="guestTable">
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>
